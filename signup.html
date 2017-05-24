@@ -4,9 +4,11 @@
 <head>
 	<meta name = "viewport" content = "width=device-width, initial scale=1.0">
 	<meta charset = "utf-8">
-	<meta name = "Hotel taltaltal" content = "Esta é a página do hotel tal tal tal"> <!-- EDIT LATER  -->
-	<title>Hotel Sem Nome</title>	<!-- EDIT LATER  -->
-	<link href = "css/bootstrap.css" rel = "stylesheet">	
+	<meta name = "description" content = "Esta é a página de cadastro do Hotel Overlook">
+	<title>Hotel Overlook - Cadastro</title>
+	<link href = "css/bootstrap.css" rel = "stylesheet">
+	<link href = "css/general.css" rel = "stylesheet">
+	<link href = "css/signup.css" rel = "stylesheet">	
 </head>
 
 <body>
@@ -21,7 +23,7 @@
 					<span class = "icon-bar"></span>
 				</button>
 				
-				<a href = "index.html" class = "navbar-brand">Hotel</a> <!-- EDIT LATER  -->
+				<a href="index.html" class="navbar-left"><img src="/img/logowhite.png" id = navbarlogo></a>
 			</div> <!-- End Navbar Header -->
 			<div class = "collapse navbar-collapse" id = "navbar-collapse">
 				
@@ -39,6 +41,35 @@
 		</div> <!-- End Container -->
 
 	</nav> <!-- End Navbar -->	
+	
+	<!-- Signup Form -->
+	<div class="container col-lg-4 col-lg-offset-4" id = "signupform">
+		<form action = "" class = "form-horizontal">
+        	<h2 class="form-signin-heading">Efetue seu cadastro!</h2>
+			<div class = "form-group">
+				<label for = "user-name" class = "col-lg-2" control-label>Nome</label>
+				<div class = "col-lg-10">
+					<input type = "text" class = "form-control" id = "user-name" placeholder = "Insira seu Nome">
+				</div>
+			</div> <!-- End Form Group -->
+
+			<div class = "form-group">
+				<label for = "user-email" class = "col-lg-2" control-label>Email</label>
+				<div class = "col-lg-10">
+					<input type = "text" class = "form-control" id = "user-email" placeholder = "Insira seu Email">
+				</div>
+			</div> <!-- End Form Group -->
+			
+			<div class = "form-group">
+				<label for = "user-phone" class = "col-lg-2" control-label>Telefone</label>
+				<div class = "col-lg-10">
+					<input type = "phone" class = "form-control" id = "user-phone" placeholder = "Insira um Telefone">
+				</div>
+			</div> <!-- End Form Group -->
+
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Cadastrar</button>
+		</form>
+	</div> <!-- /container -->
 	
 	<!-- Footer -->
 	<footer>

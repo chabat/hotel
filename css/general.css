@@ -1,0 +1,10 @@
+body{
+	padding-top: 40px;
+}
+
+#navbarlogo{
+    height: auto;
+    width: auto;
+    max-height: 50px;
+    max-width: 100px;
+}
