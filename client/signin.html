@@ -1,0 +1,85 @@
+<!-- !#()&@  -->
+<template name="Signin">
+<head>
+	<meta name = "viewport" content = "width=device-width, initial scale=1.0">
+	<meta charset = "utf-8">
+	<meta name = "description" content = "Esta é a página de login do Hotel Overlook"> <!-- EDIT LATER  -->
+	<title>Hotel Overlook - Login</title>
+	<!--<link href = "css/bootstrap.css" rel = "stylesheet">
+	<link href = "css/signin.css" rel = "stylesheet">
+	<link href = "css/general.css" rel = "stylesheet"> -->
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class = "navbar navbar-inverse navbar-fixed-top" id= "mynavbar">
+		<div class = "container"> <!-- switch to container-fluid!? -->
+			<!-- <a class = "navbar-brand" href = "index.html">Hotel</a> -->
+			<div class = "navbar-header">
+				<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+
+				<a href="index.html" class="navbar-left"><img src="img/logowhite.png" id = navbarlogo></a>
+			</div> <!-- End Navbar Header -->
+			<div class = "collapse navbar-collapse" id = "navbar-collapse">
+
+				<a href = "signin.html" class = "btn btn-default navbar-btn navbar-right glyphicon glyphicon-log-in "> Entrar</a>
+				<a href = "signup.html" class = "btn btn-default navbar-btn navbar-right glyphicon glyphicon-user"> Cadastre-se</a>
+
+
+				<ul class = "nav navbar-nav">
+					<li><a href = "reservation.html">Reservas</a></li>
+					<li><a href = "about.html">Sobre nós</a></li>
+					<li><a href = "contact.html">Contato</a></li>
+
+				</ul>
+			</div> <!-- End collapse navbar  -->
+		</div> <!-- End Container -->
+
+	</nav> <!-- End Navbar -->
+
+	<!-- Login Form -->
+	<div class="container col-lg-4 col-lg-offset-4" id = "loginform">
+		<form class="form-signin" >
+        	<h2 class="form-signin-heading">Efetue o Login!</h2>
+        	<label for="inputEmail" class="sr-only">Email</label>
+        	<input type="email" id="inputEmail" class="form-control" placeholder="Endereço de Email" required autofocus>
+        	<label for="inputPassword" class="sr-only">Senha</label>
+        	<input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+        	<div class="checkbox">
+				<label>
+            		<input type="checkbox" value="remember-me">Lembre-se de mim
+          		</label>
+        	</div>
+        	<button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+			<p>Ainda não tem uma conta? <a href = "signup.html">Cadastre-se</a></p>
+		</form>
+	</div> <!-- /container -->
+
+
+
+	<!-- Footer -->
+	<footer>
+		<hr>
+		<div class = "container text-center navbar-fixed-bottom">
+			<ul class = "list-inline">
+				<li><a href = "">Twitter</a></li>
+				<li><a href = "">Facebook</a></li>
+				<li><a href = "">Instagram</a></li>
+
+			</ul>
+			<p>&copy; Copyright @ 2017</p>
+		</div>
+	</footer>
+
+	<!-- Scripts
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src = "js/bootstrap.min.js"></script>
+	<<script src="js/jquery-3.2.1.min.js"></script>
+	-->
+</body>
+</template>
