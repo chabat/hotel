@@ -20,6 +20,7 @@
 			</div> <!-- End Page Header -->
 
 			<div class = "row">
+
 				<div class = "col-lg-4">
 					<p><strong>Nos Encontre!</strong></p>
 					<adress>
@@ -31,37 +32,8 @@
 					</adress>
 				</div>
 
-				<div class = "col-lg-8">
-					<form action = "" class = "form-horizontal">
-						<div class = "form-group">
-							<label for = "user-name" class = "col-lg-2" control-label>Nome</label>
-							<div class = "col-lg-10">
-								<input type = "text" class = "form-control" id = "user-name" placeholder = "Insira seu Nome">
-							</div>
-						</div> <!-- End Form Group -->
+				{{>ContactForm}}
 
-						<div class = "form-group">
-							<label for = "user-email" class = "col-lg-2" control-label>Email</label>
-							<div class = "col-lg-10">
-								<input type = "text" class = "form-control" id = "user-email" placeholder = "Insira seu Email">
-							</div>
-						</div> <!-- End Form Group -->
-
-						<div class = "form-group">
-							<label for = "user-message" class = "col-lg-2" control-label>Sua Mensagem</label>
-							<div class = "col-lg-10">
-								<textarea name = "user-message" id = "user-message" class = "form-control" cols = 20 rows = 10
-								placeholder = "Abra seu coração!"></textarea>
-							</div>
-						</div> <!-- End Form Group -->
-
-						<div class = "form-group">
-							<div class = "col-lg-10 col-lg-offset-2">
-								<button type = "submit" class = "btn btn-primary">Enviar</button>
-							</div>
-						</div>
-					</form>
-				</div>
 			</div> <!-- End Row -->
 
 		</section>
@@ -76,4 +48,40 @@
 	<<script src="js/jquery-3.2.1.min.js"></script>
 	-->
 </body>
+</template>
+
+<template name = "ContactForm">
+	<div class = "col-lg-8">
+		<form class = "form-horizontal">
+
+			<div class = "form-group">
+				<label for = "ContactName" class = "col-lg-2" control-label>Nome</label>
+				<div class = "col-lg-10">
+					<input type = "text" class = "form-control" placeholder = "Insira seu Nome" name = "ContactName">
+				</div>
+			</div> <!-- End Form Group -->
+
+			<div class = "form-group">
+				<label for = "Email" class = "col-lg-2" control-label>Email</label>
+				<div class = "col-lg-10">
+					<input type = "text" class = "form-control" placeholder = "Insira seu Email" name = "Email">
+				</div>
+			</div> <!-- End Form Group -->
+
+			<div class = "form-group">
+				<label for = "Message" class = "col-lg-2" control-label>Sua Mensagem</label>
+				<div class = "col-lg-10">
+					<textarea class = "form-control" cols = 20 rows = 10
+					placeholder = "Abra seu coração!" name = "Message"></textarea>
+				</div>
+			</div> <!-- End Form Group -->
+
+			<div class = "form-group">
+				<div class = "col-lg-10 col-lg-offset-2">
+					<button type = "submit" class = "btn btn-primary">Enviar</button>
+				</div>
+			</div> <!-- End Form Group -->
+
+		</form>
+	</div>
 </template>

@@ -25,3 +25,7 @@ Router.route('/signin.html', function () {
 Router.route('/signup.html', function () {
   this.render('Signup');
 });
+
+Router.route('/database.html', function () {
+  this.render('Database');
+});

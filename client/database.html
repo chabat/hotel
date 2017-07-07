@@ -1,0 +1,31 @@
+<template name="Database">
+  <h2> CLIENTES CADASTRADOS </h2>
+
+  <ul>
+    {{#each customer}}
+      <li class = "customer">
+        Nome: {{name}} <br>
+        Email: {{email}} <br>
+        Telefone: {{phone}} <br>
+        Senha: {{passw}} <br>
+        ID: {{_id}} <br>
+        <br>
+      </li>
+    {{/each}}
+  </ul>
+
+<h2> FEEDBACKS ENVIADOS </h2>
+
+  <ul>
+    {{#each feedback}}
+      <li class = "feedback">
+        Nome: {{name}} <br>
+        Email: {{email}} <br>
+        Mensagem: "{{message}}" <br>
+        ID: {{_id}} <br>
+        <br>
+      </li>
+    {{/each}}
+  </ul>
+
+</template>
